@@ -68,12 +68,7 @@ Extended Migration Command
 	),
 ),
 ```
-**Важно:** если вы уже использовали MigrateCommand, необходимо добавить столбец module в таблицу версий migrationTable:
 
-```sql
-ALTER TABLE `tbl_migration` ADD COLUMN `module` varchar(32) DEFAULT NULL;
-UPDATE `tbl_migration` SET module='core';
-```
 
 Использование
 -------------
